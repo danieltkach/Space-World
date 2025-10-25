@@ -1,0 +1,45 @@
+This is a C-based space navigation simulator that models interplanetary travel in our solar system.
+
+  Project Overview
+
+  - Executable: space_navigator (already compiled)
+  - Language: C
+  - Build System: Shell script using clang compiler
+  - Status: Fully compiled with object files (.o) present
+
+  Project Structure
+
+  Core Modules:
+
+  1. planet.c/h - Planetary mechanics
+    - Defines Planet struct (name, orbit radius, orbital period)
+    - Defines Vector3D for 3D coordinates
+    - Calculates planet positions over time
+    - Distance calculations
+  2. destinations.c/h - Destination database
+    - Maintains array of known destinations (planets)
+    - Lookup functionality by name
+    - Display all available destinations
+  3. navigation.c/h - Navigation system
+    - ShipState tracking (position, time, current destination)
+    - Hohmann transfer orbit calculations
+    - Phasing time computations
+    - Travel system execution
+    - Information display and formulae
+  4. main.c - Main program loop
+    - Interactive console menu system
+    - Ship named "Mineral-Raider-1"
+    - Starts at Earth
+    - Menu options: Info, Destinations, Formulae, Hohmann Transfer, Travel System
+  5. travel01.c - Additional travel module (not linked in current build)
+  6. stories.txt - Narrative content describing entering the Sun
+
+  Features
+
+  - Real orbital mechanics simulation
+  - Hohmann transfer orbit calculations
+  - Time-based planetary positioning
+  - Interactive command-line interface
+  - Multiple destinations in solar system
+
+  A working space travel simulator with realistic orbital mechanics for educational or entertainment purposes!
